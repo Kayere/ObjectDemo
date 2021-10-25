@@ -13,7 +13,7 @@
         Close()
     End Sub
 
-    Private Sub WelcomingForm_DoubleClick(sender As Object, e As EventArgs) Handles Me.DoubleClick
+    Private Sub WelcomingForm_Click(sender As Object, e As EventArgs) Handles Me.Click
         WindowState = FormWindowState.Maximized
         BackColor = Color.Red
     End Sub
