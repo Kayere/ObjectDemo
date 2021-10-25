@@ -22,6 +22,7 @@ Partial Class ObjectDemonstration
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.DisplayGroupBox = New System.Windows.Forms.GroupBox()
         Me.DisplayTextBox = New System.Windows.Forms.TextBox()
         Me.FontGroup = New System.Windows.Forms.GroupBox()
@@ -39,6 +40,7 @@ Partial Class ObjectDemonstration
         Me.PictureBox = New System.Windows.Forms.PictureBox()
         Me.LoadPictureButton = New System.Windows.Forms.Button()
         Me.ExitButton = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.DisplayGroupBox.SuspendLayout()
         Me.FontGroup.SuspendLayout()
         Me.FontColorGroupBox.SuspendLayout()
@@ -86,6 +88,7 @@ Partial Class ObjectDemonstration
         Me.TahomaRadioButton.TabIndex = 2
         Me.TahomaRadioButton.TabStop = True
         Me.TahomaRadioButton.Text = "Tahoma"
+        Me.ToolTip1.SetToolTip(Me.TahomaRadioButton, "Changes font to Tahoma")
         Me.TahomaRadioButton.UseVisualStyleBackColor = True
         '
         'MagnetoRadioButton
@@ -97,6 +100,7 @@ Partial Class ObjectDemonstration
         Me.MagnetoRadioButton.TabIndex = 1
         Me.MagnetoRadioButton.TabStop = True
         Me.MagnetoRadioButton.Text = "Magneto"
+        Me.ToolTip1.SetToolTip(Me.MagnetoRadioButton, "Changes font to Magneto")
         Me.MagnetoRadioButton.UseVisualStyleBackColor = True
         '
         'GaramondRadioButton
@@ -108,6 +112,7 @@ Partial Class ObjectDemonstration
         Me.GaramondRadioButton.TabIndex = 0
         Me.GaramondRadioButton.TabStop = True
         Me.GaramondRadioButton.Text = "Garamond"
+        Me.ToolTip1.SetToolTip(Me.GaramondRadioButton, "Changes font to Garamond")
         Me.GaramondRadioButton.UseVisualStyleBackColor = True
         '
         'FontColorGroupBox
@@ -132,6 +137,7 @@ Partial Class ObjectDemonstration
         Me.RedRadioButton.TabIndex = 2
         Me.RedRadioButton.TabStop = True
         Me.RedRadioButton.Text = "Red"
+        Me.ToolTip1.SetToolTip(Me.RedRadioButton, "Changes font color to Red")
         Me.RedRadioButton.UseVisualStyleBackColor = True
         '
         'BlueRadioButton
@@ -143,6 +149,7 @@ Partial Class ObjectDemonstration
         Me.BlueRadioButton.TabIndex = 1
         Me.BlueRadioButton.TabStop = True
         Me.BlueRadioButton.Text = "Blue"
+        Me.ToolTip1.SetToolTip(Me.BlueRadioButton, "Changes font color to Blue")
         Me.BlueRadioButton.UseVisualStyleBackColor = True
         '
         'GreenRadioButton
@@ -154,6 +161,7 @@ Partial Class ObjectDemonstration
         Me.GreenRadioButton.TabIndex = 0
         Me.GreenRadioButton.TabStop = True
         Me.GreenRadioButton.Text = "Green"
+        Me.ToolTip1.SetToolTip(Me.GreenRadioButton, "Changes font color to Green")
         Me.GreenRadioButton.UseVisualStyleBackColor = True
         '
         'FontStyleGroupBox
@@ -178,6 +186,7 @@ Partial Class ObjectDemonstration
         Me.BoldItalicCheckBox.Size = New System.Drawing.Size(124, 30)
         Me.BoldItalicCheckBox.TabIndex = 2
         Me.BoldItalicCheckBox.Text = "Bold Italic"
+        Me.ToolTip1.SetToolTip(Me.BoldItalicCheckBox, "Changes font style to Bold Italic")
         Me.BoldItalicCheckBox.UseVisualStyleBackColor = True
         '
         'BoldCheckBox
@@ -189,6 +198,7 @@ Partial Class ObjectDemonstration
         Me.BoldCheckBox.Size = New System.Drawing.Size(74, 30)
         Me.BoldCheckBox.TabIndex = 1
         Me.BoldCheckBox.Text = "Bold"
+        Me.ToolTip1.SetToolTip(Me.BoldCheckBox, "Changes font style to Bold")
         Me.BoldCheckBox.UseVisualStyleBackColor = True
         '
         'ItalicCheckBox
@@ -200,6 +210,7 @@ Partial Class ObjectDemonstration
         Me.ItalicCheckBox.Size = New System.Drawing.Size(78, 30)
         Me.ItalicCheckBox.TabIndex = 0
         Me.ItalicCheckBox.Text = "Italic"
+        Me.ToolTip1.SetToolTip(Me.ItalicCheckBox, "Changes font style to Italic")
         Me.ItalicCheckBox.UseVisualStyleBackColor = True
         '
         'PictureBox
@@ -219,6 +230,7 @@ Partial Class ObjectDemonstration
         Me.LoadPictureButton.Size = New System.Drawing.Size(134, 43)
         Me.LoadPictureButton.TabIndex = 5
         Me.LoadPictureButton.Text = "Load Picture"
+        Me.ToolTip1.SetToolTip(Me.LoadPictureButton, "Loads a local picture")
         Me.LoadPictureButton.UseVisualStyleBackColor = True
         '
         'ExitButton
@@ -229,6 +241,7 @@ Partial Class ObjectDemonstration
         Me.ExitButton.Size = New System.Drawing.Size(134, 43)
         Me.ExitButton.TabIndex = 7
         Me.ExitButton.Text = "Exit"
+        Me.ToolTip1.SetToolTip(Me.ExitButton, "Closes the form")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'ObjectDemonstration
@@ -276,4 +289,5 @@ Partial Class ObjectDemonstration
     Friend WithEvents PictureBox As PictureBox
     Friend WithEvents LoadPictureButton As Button
     Friend WithEvents ExitButton As Button
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

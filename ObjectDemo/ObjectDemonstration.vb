@@ -4,16 +4,20 @@
         CenterToScreen()
     End Sub
 
+    Dim CurrentStyle As FontStyle
     Private Sub GaramondRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles GaramondRadioButton.CheckedChanged
         DisplayTextBox.Font = New Font("Garamond", 11)
+        setFontStyle(CurrentStyle)
     End Sub
 
     Private Sub MagnetoRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles MagnetoRadioButton.CheckedChanged
         DisplayTextBox.Font = New Font("Magneto", 11)
+        setFontStyle(CurrentStyle)
     End Sub
 
     Private Sub TahomaRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles TahomaRadioButton.CheckedChanged
         DisplayTextBox.Font = New Font("Tahoma", 11)
+        setFontStyle(CurrentStyle)
     End Sub
 
     Private Sub GreenRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles GreenRadioButton.CheckedChanged
@@ -79,6 +83,8 @@
         Else
             fontStyle = style1
         End If
+
+        CurrentStyle = fontStyle
 
         If GaramondRadioButton.Checked Then
             DisplayTextBox.Font = New Font("Garamond", 11, fontStyle)
