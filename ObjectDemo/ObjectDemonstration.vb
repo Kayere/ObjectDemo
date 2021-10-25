@@ -76,7 +76,7 @@
         WelcomingForm.Show()
     End Sub
 
-    Private Sub setFontStyle(style1 As FontStyle, Optional style2 As FontStyle = FontStyle.Regular)
+    Private Sub SetFontStyle(style1 As FontStyle, Optional style2 As FontStyle = FontStyle.Regular)
         Dim fontStyle As FontStyle
         If style2 <> FontStyle.Regular Then
             fontStyle = style1 Or style2
@@ -97,15 +97,15 @@
         End If
     End Sub
 
-    Private Sub removeFontStyle()
+    Private Sub RemoveFontStyle()
         If BoldItalicCheckBox.Checked Or (BoldCheckBox.Checked And ItalicCheckBox.Checked) Then
-            setFontStyle(FontStyle.Bold, FontStyle.Italic)
+            SetFontStyle(FontStyle.Bold, FontStyle.Italic)
         ElseIf ItalicCheckBox.Checked Then
-            setFontStyle(FontStyle.Italic)
+            SetFontStyle(FontStyle.Italic)
         ElseIf BoldCheckBox.Checked Then
-            setFontStyle(FontStyle.Bold)
+            SetFontStyle(FontStyle.Bold)
         Else
-            setFontStyle(FontStyle.Regular)
+            SetFontStyle(FontStyle.Regular)
         End If
     End Sub
 

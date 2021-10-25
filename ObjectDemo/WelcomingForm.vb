@@ -4,12 +4,12 @@
         CenterToScreen()
     End Sub
 
-    Private Sub loadObjectDemoButton_Click(sender As Object, e As EventArgs) Handles LoadObjectDemoButton.Click
+    Private Sub LoadObjectDemoButton_Click(sender As Object, e As EventArgs) Handles LoadObjectDemoButton.Click
         Hide()
         ObjectDemonstration.Show()
     End Sub
 
-    Private Sub exitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
+    Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Close()
     End Sub
 
